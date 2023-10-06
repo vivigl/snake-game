@@ -176,6 +176,7 @@ public class GamePanel extends JPanel implements  ActionListener{
 		FontMetrics metricsScrore = getFontMetrics(g.getFont());
 		g.drawString("Score: " + applesEaten, (SCREEN_WIDTH - metricsScrore.stringWidth("Score: " + applesEaten))/2, SCREEN_HEIGHT/3);
 		
+		//Restarts the game
 		String buttonText = "Do you want to try again?";
 	    JButton restartButton = new JButton(buttonText);
 	    Font font = new Font("Ink Free", Font.PLAIN, 18);
@@ -192,7 +193,6 @@ public class GamePanel extends JPanel implements  ActionListener{
 	            SnakeGame.main(null);
 	        }
 	    });  
-        
 	}
 	
 	@Override
